@@ -1,0 +1,40 @@
+                  Df Sum Sq Mean Sq F value   Pr(>F)    
+pan_colour         2  248.5  124.23  14.673 6.87e-05 ***
+canopy             1  202.8  202.80  23.953 5.44e-05 ***
+pan_colour:canopy  2    5.0    2.50   0.295    0.747    
+Residuals         24  203.2    8.47                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = abundance ~ pan_colour + canopy + pan_colour:canopy, data = insect.data)
+
+$pan_colour
+            diff       lwr       upr     p adj
+red-blue     2.2 -1.049673  5.449673 0.2292689
+yellow-blue  6.9  3.650327 10.149673 0.0000558
+yellow-red   4.7  1.450327  7.949673 0.0038461
+
+$canopy
+            diff       lwr       upr    p adj
+open-canopy -5.2 -7.392875 -3.007125 5.44e-05
+
+$`pan_colour:canopy`
+                           diff         lwr        upr     p adj
+red:canopy-blue:canopy      3.2  -2.4900493  8.8900493 0.5210959
+yellow:canopy-blue:canopy   7.4   1.7099507 13.0900493 0.0058891
+blue:open-blue:canopy      -4.2  -9.8900493  1.4900493 0.2396741
+red:open-blue:canopy       -3.0  -8.6900493  2.6900493 0.5877585
+yellow:open-blue:canopy     2.2  -3.4900493  7.8900493 0.8346640
+yellow:canopy-red:canopy    4.2  -1.4900493  9.8900493 0.2396741
+blue:open-red:canopy       -7.4 -13.0900493 -1.7099507 0.0058891
+red:open-red:canopy        -6.2 -11.8900493 -0.5099507 0.0271259
+yellow:open-red:canopy     -1.0  -6.6900493  4.6900493 0.9936652
+blue:open-yellow:canopy   -11.6 -17.2900493 -5.9099507 0.0000220
+red:open-yellow:canopy    -10.4 -16.0900493 -4.7099507 0.0001069
+yellow:open-yellow:canopy  -5.2 -10.8900493  0.4900493 0.0872717
+red:open-blue:open          1.2  -4.4900493  6.8900493 0.9854939
+yellow:open-blue:open       6.4   0.7099507 12.0900493 0.0211870
+yellow:open-red:open        5.2  -0.4900493 10.8900493 0.0872717
+

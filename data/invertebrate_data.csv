@@ -10,9 +10,9 @@ abundance,pan_colour,canopy
 9,red,open
 3,red,open
 11,yellow,open
-7,yellow,open
+13,yellow,open
 11,yellow,open
-10,yellow,open
+12,yellow,open
 15,yellow,open
 7,blue,canopy
 12,blue,canopy
@@ -25,7 +25,7 @@ abundance,pan_colour,canopy
 17,red,canopy
 18,red,canopy
 16,yellow,canopy
-7,yellow,canopy
+15,yellow,canopy
 14,yellow,canopy
 19,yellow,canopy
 24,yellow,canopy
