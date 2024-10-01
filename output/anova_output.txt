@@ -1,10 +1,10 @@
-                  Df Sum Sq Mean Sq F value   Pr(>F)    
-pan_colour         2  248.5  124.23  14.673 6.87e-05 ***
-canopy             1  202.8  202.80  23.953 5.44e-05 ***
-pan_colour:canopy  2    5.0    2.50   0.295    0.747    
-Residuals         24  203.2    8.47                     
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+# A tibble: 4 × 6
+  Term                 DF     SS     MS      F  `P-value`
+  <chr>             <dbl>  <dbl>  <dbl>  <dbl>      <dbl>
+1 pan_colour            2 248.   124.   14.7    0.0000687
+2 canopy                1 203.   203.   24.0    0.0000544
+3 pan_colour:canopy     2   5.00   2.50  0.295  0.747    
+4 Residuals            24 203.     8.47 NA     NA        
   Tukey multiple comparisons of means
     95% family-wise confidence level
 
